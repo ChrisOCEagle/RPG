@@ -1,3 +1,3 @@
-var statRoller = require("./statRoller.js");
-
-statRoller();
+const CharacterCreator = require("./characterCreator.js");
+var mage = new CharacterCreator();
+console.log(mage);
