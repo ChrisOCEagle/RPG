@@ -2,7 +2,7 @@
 
 #### Application Description
 
-This application will be a roleplaying game that is going utilize either an API from DnDBeyond, if available, or a local database that I have created that will keep track of all the book data from my physical copies of the DnD rule books. The are a few slight variations in the rules as I have instituted my own homebrew rules into this game.
+This application will be a roleplaying game that is going utilize either an API from DnDBeyond, if available, or a local database that I have created that will keep track of all the book data from my physical copies of the DnD rule books. There are a few slight variations in the rules as I have instituted my own homebrew rules into this game.
 
 The setting for this game is my homebrew world of Karandia and possibly later Matthew Mercer's homebrew world of Exandria.
 
