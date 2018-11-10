@@ -1,0 +1,23 @@
+{
+  "name": "rpg",
+  "version": "1.0.0",
+  "description": "this application will act like a computer/mobile based application for the tabletop game known as Dungeons and Dragons.",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisOCEagle/RPG.git"
+  },
+  "author": "Christopher O'Connell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisOCEagle/RPG/issues"
+  },
+  "homepage": "https://github.com/ChrisOCEagle/RPG#readme",
+  "dependencies": {
+    "inquirer": "^6.2.0",
+    "mysql": "^2.16.0"
+  }
+}

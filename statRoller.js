@@ -3,9 +3,10 @@ var diceRoller = new DiceRoller();
 
 function statRoller () {
     // rolls fours d6 and stores each result within an array for later use in generating stats for an RPG
-    var diceArray = [];
-    var statDiceArray = [];
-    var stat = 0;
+    var diceArray = [],
+        statDiceArray = [],
+        score = 0,
+        stat = {};
     for (let i = 0; i < 4; i++) {
         var d6 = diceRoller.d6();
         diceArray.push(d6);
@@ -47,9 +48,16 @@ function statRoller () {
     };
     // loop through statDiceArray and add every number to generate a stat
     for (let i = 0; i < statDiceArray.length; i++) {
-        stat += statDiceArray[i];
+        score += statDiceArray[i];
     }
+    // compute the modifier for the stat in addition to computing the stat itself
+    // the modifier is the stat minus ten, divided by two, and rounded down
+    var modifier = Math.floor((score - 10) / 2);
     // return the value of stat
+    stat = {
+        score: parseInt(score),
+        modifier: parseInt(modifier)
+    };
     return stat;
 };
 
